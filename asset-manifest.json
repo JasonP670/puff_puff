@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "http://localhost:3000/static/css/main.378618ad.css",
-    "main.js": "http://localhost:3000/static/js/main.f0f77bfb.js",
-    "index.html": "http://localhost:3000/index.html",
-    "main.378618ad.css.map": "http://localhost:3000/static/css/main.378618ad.css.map",
-    "main.f0f77bfb.js.map": "http://localhost:3000/static/js/main.f0f77bfb.js.map"
+    "main.css": "/puff_puff/static/css/main.378618ad.css",
+    "main.js": "/puff_puff/static/js/main.f0f77bfb.js",
+    "index.html": "/puff_puff/index.html",
+    "main.378618ad.css.map": "/puff_puff/static/css/main.378618ad.css.map",
+    "main.f0f77bfb.js.map": "/puff_puff/static/js/main.f0f77bfb.js.map"
   },
   "entrypoints": [
     "static/css/main.378618ad.css",
