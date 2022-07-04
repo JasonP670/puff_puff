@@ -1,4 +1,4 @@
-export async function getData(url = '', body = '') {
+export async function getData(url = 'https://jasonp670-puffs.herokuapp.com/api/v1/', body = '') {
   const response = await fetch(url, {
     body: body,
   });

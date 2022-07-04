@@ -9,7 +9,7 @@ export default function Home() {
   }, []);
 
   async function fetchData() {
-    const data = await getData('/api/v1/products', null);
+    const data = await getData('products');
     setProducts(data);
   }
 

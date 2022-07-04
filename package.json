@@ -1,6 +1,6 @@
 {
   "name": "puffs",
-  "homepage": ".",
+  "homepage": "https://jasonp670.github.io/puff_puff",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
