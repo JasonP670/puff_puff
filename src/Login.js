@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { postData } from './utils';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -8,23 +9,12 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = { username, password };
-    console.log('submitted');
-    console.log(data);
-    await fetch('/api/v1/auth/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-      .then(async (res) => {
-        console.log('success: ', res);
-        const response = await res.json();
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log('error: ', err);
-      });
+    try {
+      const response = await postData('login', data);
+      console.log(response);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const handleUsernameChange = (e) => {
